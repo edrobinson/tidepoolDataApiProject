@@ -1,0 +1,49 @@
+Templates  for various Bootstrap elements to save mucho typing
+Copy and paste then use find and replace to re[lace the [xx] tokens.
+Originally used in the Processing class Smarty template,
+
+<!-- Simple labled text input -->
+                       <!-- From misc/bootstrap.html --->
+                        <div class="formgroup form-group-sm">
+                        <label class="control-label">[aa]</label>
+                        <input type="text" class="form-control input-sm"  name="[bb]" id="[bb]"> 
+                        </div>
+
+<!-- Multiuse input - replace the type token-->
+                       <!-- From misc/bootstrap.html --->
+                        <div class="formgroup form-group-sm">
+                        <label class="control-label">[aa]</label>
+                        <input type="[type]" class="form-control input-sm"  name="[bb]" id="[bb]"> 
+                        </div>
+                        
+<!--This snippet presents a date and time in 2 cells in a single row.
+                       <!-- From misc/bootstrap.html --->
+                       <div class="row">
+                          <div class="col-6" style="padding-left: 15px;">
+                                    <div class="row">
+                                          <div class="col-sm-6">
+                                                <div class="formgroup form-group-sm">
+                                                      <label class="control-label">[aa]</label>
+                                                      <input type="date" name="[bb]" id="[bb]"  class="form-control input-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                                <div class="formgroup form-group-sm">
+                                                      <label>[cc]</label>
+                                                      <input type="time" name="[dd]" id="[dd]"  class="form-control input-sm" />
+                                                </div>
+  
+                                          </div>
+                                    </div>
+                          </div>
+                        </div>                        
+ 
+ <!-- This snippet creats a <select>-->
+                       <!-- From misc/bootstrap.html --->
+                       <div class="form-group form-group-sm" style="margin-bottom: 0">
+                              <label class="control-label">[aa]</label>
+                              <select class="form-control selbottom" id="[bb]" name="[bb]">
+                                    <option selected>[cc]</option>
+                                    {$[dd]}
+                              </select>
+                        </div>

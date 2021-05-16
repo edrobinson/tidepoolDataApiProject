@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+    <input type="button" value="Get Authorization" onclick="getTidepoolAuthorization()"/><br>
+    <input type="button" value="Get Data" onclick="getTidepoolData()"/>
+<script src='assets/js/tidepoolAPI.js'></script>    
+<script>
+    var tidepoolUseridee;
+    var tidepoolToken;
+    
+    function getTidepoolAuthorization()
+    {
+        uid = 'edrobinsonjr@gmail.com';
+        pwd = 'edr123467>';
+        response = getAuth(uid,pwd);
+        if (!response)
+        {
+            alert('Authorization Failed.');
+        }
+        else
+        {
+            alert('Authorization Succeded.');
+            /*
+            json = response.text;
+            json = JSON.parse(json);
+            tidepoolUseridee = json['userid'];
+            tidepoolToken = response.headers.get('X-Tidepool-session-Token');
+            alert(tidepoolUserid + '--' + tidepoolToken);*/
+
+        }
+    }
+    
+    function getTidepoolData()
+    {
+        if(getData())
+        {
+            alert('Data transfer succeded.');
+        }
+        else
+        {
+            alert('Data trensfer failed.');
+        }
+    }
+</script>
+
+
+</body></html>        

@@ -1,0 +1,20 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.16",
+        "mpdf/mpdf": "^8.0",
+        "jaxon-php/jaxon-core": "~2.0",
+        "jaxon-php/jaxon-armada": "~2.0",
+        "smarty/smarty": "^3.1",
+        "phpoffice/phpword": "^0.18.0",
+        "guzzlehttp/guzzle": "^7.0@dev",
+        "dompdf/dompdf": "^1.0",
+        "gears/pdf": "^0.4.1",
+        "ncjoes/office-converter": "^1.0",
+        "twbs/bootstrap": "5.0.0-beta2",
+        "ezsql/ezsql": "^5.1",
+        "fpdf/fpdf": "^1.82",
+        "kartik-v/bootstrap-fileinput": "@dev",
+        "rmccue/requests": ">=1.0"
+    }
+
+}

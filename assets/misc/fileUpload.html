@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+</head>
+<body style="background-color: #DDDDDD;">
+    <div class="container">
+        <form action="fileUpload.php" method="post" enctype="multipart/form-data">
+            <div class="form-group row">
+            <input type="file" class="btn btn-outline-primary" name="fileToUpload" id="fileToUpload" accept="application/json"style="margin-bottom: 30px;"/>
+            <input type="submit" class="btn btn-outline-primary" value="Upload File" style="margin-left: 85px;" name="upld"/>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--<script>
+    
+        //Setup the file input on ready
+        $(document).ready(function(){
+            //Clear the file input text on click
+            $("#fileToUpload").click(function(){
+                $(this).val("");
+            });
+
+            //Try to run the upload on change
+            $("#fileToUpload").change(function(){
+                processUpload();
+            });
+        });
+        
+        //On change check the file specified and
+        //click the submit button if ok.
+        //Then wait a second and check the server echo value
+        function processUpload()
+        {
+           //Good file type?
+            var file = document.getElementById('fileToUpload').files[0];
+            if(file.type != 'application/json')
+            {
+                alert('The selected file must be of type "json".');
+                return;
+            }
+            
+            //Click the submit button
+            $('#upld').click();
+            
+            //Set a timer and check the innerhtml of the div for "1"
+            //or else an error message
+            setTimeout(checkResponse, 5000);
+        }
+        
+        function checkResponse()
+        {
+            var resp = document.body.innerHTML;
+            if (resp == '1')
+            {
+                alert('Upload Succeded');
+            }
+            else
+            {
+                alert('in error return;');
+                alert(resp);
+            }
+        
+        }
+    </script>-->
+</body>
+</html>
