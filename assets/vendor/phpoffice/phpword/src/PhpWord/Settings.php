@@ -91,14 +91,14 @@ class Settings
      *
      * @var string
      */
-    private static $pdfRendererName = 'MPDF';
+    private static $pdfRendererName = null;
 
     /**
      * Directory Path to the external Library used for rendering PDF files
      *
      * @var string
      */
-    private static $pdfRendererPath = 'C:\wamp64\www\tidepoolDataApiProject\assets\vendor\mpdf';
+    private static $pdfRendererPath = null;
 
     /**
      * Measurement unit

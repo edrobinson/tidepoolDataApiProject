@@ -10,6 +10,6 @@ return array(
     'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'PhantomInstaller\\' => array($vendorDir . '/jakoch/phantomjs-installer/src'),
+    'Icecave\\Parity' => array($vendorDir . '/icecave/parity/src'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
-    'ForceUTF8\\' => array($vendorDir . '/neitanod/forceutf8/src'),
 );
